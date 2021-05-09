@@ -1,0 +1,35 @@
+//BoolTest-compare les variables entrées au clavier et place le résultat dans une variable logique.
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int nUumberofArgs, char* pszArgs[])
+{
+    //définit le format de sortie pour les variables logiques sous le forme true/ false au lieu de 1 et 0
+    cout.setf(cout.boolalpha);
+    
+    //initialise deux arguments
+    int nArg1;
+    cout<<"Entrez la valeur 1 :";
+    cin >> nArg1 ;
+    
+    int nArg2;
+    cout<<"Entrez la valeur 2:";
+    cin>> nArg2;
+    
+    bool b ;
+    b=nArg1==nArg2;
+    
+    cout<<"L'instruction, "<<nArg1
+        <<"="              <<nArg2
+        <<" vaut "           <<b
+        <<endl ;
+        
+        //attend pour terminer le programme que l'utilisateur lise le contenu de la fenêtre puis appuie sur une touche
+        system("PAUSE");
+        return 0;
+}
+    
+
+    
